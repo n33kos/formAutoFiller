@@ -1,5 +1,5 @@
 # formAutoFiller
-**formAutoFiller** targets input elements by the name attribute and replaces the value of the input as per the provided dictionary. By default it does not overwrite pre-filled values
+**formAutoFiller** targets input elements by the name attribute and replaces the input's value with the provided input. By default it does not overwrite pre-filled values.
 
 ## usage
 1. Include `jquery.formAutoFiller.js` or `jquery.formAutoFiller.min.js`
@@ -7,17 +7,17 @@
 <script src="/js/jquery.formAutoFiller.min.js"></script>
 ```
 
-2. Call the function `$('form').formAutoFiller();`
+2. Call the function `jQuery('form').formAutoFiller();`
 ```
-	$('form').formAutoFiller({
-		replaceOld: true,
-		dictionary: {
-			'first_name': 'Guy',
-			'last_name': 'Testing',
-			'email_confirm': 'test@testguy.com',
-			'phone': '1234567890'
-		}
-	});
+jQuery('form').formAutoFiller({
+	replaceOld: true,
+	dictionary: {
+		'first_name': 'Guy',
+		'last_name': 'Testing',
+		'email_confirm': 'test@testguy.com',
+		'phone': '1234567890'
+	}
+});
 ```
 
 ## options
